@@ -1,0 +1,81 @@
+19:54:34 **** Incremental Build of configuration Debug for project Temp_Sensor ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'Temp':
+../Sources/main.c:63:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(buff,"%i",temp);
+  ^
+../Sources/main.c:63:2: warning: incompatible implicit declaration of built-in function 'sprintf' [enabled by default]
+../Sources/main.c:64:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(Ptr,&buff,sizeof(buff));
+  ^
+../Sources/main.c:64:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:15: warning: assignment makes integer from pointer without a cast [enabled by default]
+   Data.ReportT="A";
+               ^
+../Sources/main.c:118:6: warning: passing argument 2 of 'Temp' from incompatible pointer type [enabled by default]
+      Temp(&ADC0_Value,&Data.Value);
+      ^
+../Sources/main.c:56:6: note: expected 'uint8 *' but argument is of type 'char (*)[4]'
+ void Temp(uint16 *Pdata, uint8 *Ptr)
+      ^
+../Sources/main.c:120:6: warning: passing argument 1 of 'AS1_SendBlock' from incompatible pointer type [enabled by default]
+      AS1_SendBlock(&Data,17, &Sent); //Envia un bloque e datos a traves del UART0
+      ^
+In file included from ../Sources/Events.h:39:0,
+                 from ../Sources/main.c:32:
+C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code/AS1.h:263:6: note: expected 'AS1_TComData *' but argument is of type 'struct <anonymous> *'
+ byte AS1_SendBlock(AS1_TComData *Ptr,word Size,word *Snd);
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building file: ../Generated_Code/AS1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Generated_Code/AS1.d" -MT"Generated_Code/AS1.o" -c -o "Generated_Code/AS1.o" "../Generated_Code/AS1.c"
+'Finished building: ../Generated_Code/AS1.c'
+' '
+'Building file: ../Generated_Code/ASerialLdd1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+'Finished building: ../Generated_Code/ASerialLdd1.c'
+' '
+'Building file: ../Generated_Code/Cpu.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+'Finished building: ../Generated_Code/Cpu.c'
+' '
+'Building file: ../Generated_Code/PE_LDD.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+'Finished building: ../Generated_Code/PE_LDD.c'
+' '
+'Building file: ../Generated_Code/Vectors.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\PDD" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Static_Code\IO_Map" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Sources" -I"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Generated_Code" -std=gnu99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+'Finished building: ../Generated_Code/Vectors.c'
+' '
+'Building target: Temp_Sensor.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/ezequ_000/Documents/ARM/Temp_Sensor/Temp_Sensor/Project_Settings/Linker_Files" -Wl,-Map,"Temp_Sensor.map" -nanolibc -o "Temp_Sensor.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Bit1.o ./Generated_Code/Bit2.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/WAIT1.o   
+'Finished building target: Temp_Sensor.elf'
+' '
+19:56:06 **** Clean-only build of configuration Debug for project Temp_Sensor ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Bit1.o ./Generated_Code/Bit2.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/WAIT1.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/AD1.d ./Generated_Code/AS1.d ./Generated_Code/ASerialLdd1.d ./Generated_Code/AdcLdd1.d ./Generated_Code/Bit1.d ./Generated_Code/Bit2.d ./Generated_Code/BitIoLdd1.d ./Generated_Code/BitIoLdd2.d ./Generated_Code/Cpu.d ./Generated_Code/PE_LDD.d ./Generated_Code/Vectors.d ./Generated_Code/WAIT1.d  Temp_Sensor.elf
+' '
+19:56:26 **** Clean-only build of configuration Debug for project Temp_Sensor ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Bit1.o ./Generated_Code/Bit2.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/WAIT1.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/AD1.d ./Generated_Code/AS1.d ./Generated_Code/ASerialLdd1.d ./Generated_Code/AdcLdd1.d ./Generated_Code/Bit1.d ./Generated_Code/Bit2.d ./Generated_Code/BitIoLdd1.d ./Generated_Code/BitIoLdd2.d ./Generated_Code/Cpu.d ./Generated_Code/PE_LDD.d ./Generated_Code/Vectors.d ./Generated_Code/WAIT1.d  Temp_Sensor.elf
+' '
+19:57:06 **** Clean-only build of configuration Debug for project Temp_Sensor ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Bit1.o ./Generated_Code/Bit2.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/WAIT1.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/AD1.d ./Generated_Code/AS1.d ./Generated_Code/ASerialLdd1.d ./Generated_Code/AdcLdd1.d ./Generated_Code/Bit1.d ./Generated_Code/Bit2.d ./Generated_Code/BitIoLdd1.d ./Generated_Code/BitIoLdd2.d ./Generated_Code/Cpu.d ./Generated_Code/PE_LDD.d ./Generated_Code/Vectors.d ./Generated_Code/WAIT1.d  Temp_Sensor.elf
+' '

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="true" description="Delete 2 resources" element1="/TempSensor_v0.2" element2="/TempSensor_v0.3" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1415677627329"/>&#x0A;<refactoring comment="Rename resource &apos;TempSensor_v0.4&apos; to &apos;Temp_Sensor&apos;" description="Rename resource &apos;TempSensor_v0.4&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/TempSensor_v0.4" name="Temp_Sensor" stamp="1415677865174" updateReferences="true"/>
+</session>

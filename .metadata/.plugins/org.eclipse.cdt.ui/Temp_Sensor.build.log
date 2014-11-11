@@ -1,0 +1,7 @@
+19:57:06 **** Clean-only build of configuration Debug for project Temp_Sensor ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Bit1.o ./Generated_Code/Bit2.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/WAIT1.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/AD1.d ./Generated_Code/AS1.d ./Generated_Code/ASerialLdd1.d ./Generated_Code/AdcLdd1.d ./Generated_Code/Bit1.d ./Generated_Code/Bit2.d ./Generated_Code/BitIoLdd1.d ./Generated_Code/BitIoLdd2.d ./Generated_Code/Cpu.d ./Generated_Code/PE_LDD.d ./Generated_Code/Vectors.d ./Generated_Code/WAIT1.d  Temp_Sensor.elf
+' '
+
+19:57:06 Build Finished (took 339ms)
+
